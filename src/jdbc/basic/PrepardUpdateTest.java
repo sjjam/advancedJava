@@ -37,7 +37,7 @@ public class PrepardUpdateTest {
 			System.out.println(result+"개 행이 수정됐습니다");
 		}catch(ClassNotFoundException e){
 			System.out.println("드라이버로딩 실패");
-		}catch(SQLException E) {
+		}catch(SQLException e) {
 			System.out.println("연결실패:");
 		}finally {
 			try {
