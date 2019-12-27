@@ -39,9 +39,9 @@ public class PreparedSelectTest {
 			System.out.println("연결실패:");
 		}finally {
 			try {
+				if(rs !=null)rs.close();
 				if(stmt !=null)stmt.close();
 				if(con !=null)con.close();
-				if(rs !=null)rs.close();
 			}catch(SQLException e) {
 				e.printStackTrace();
 			}
