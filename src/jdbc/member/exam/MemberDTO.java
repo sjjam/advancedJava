@@ -24,6 +24,17 @@ public class MemberDTO {
 		this.deptno = deptno;
 	}
 
+	public MemberDTO(String id, String pass, String name, String addr, String deptno, Date hireDate, int point) {
+		super();
+		this.id = id;
+		this.pass = pass;
+		this.name = name;
+		this.addr = addr;
+		this.deptno = deptno;
+		this.hireDate = hireDate;
+		this.point = point;
+	}
+
 	@Override
 	public String toString() {
 		return "MemberDTO [id=" + id + ", pass=" + pass + ", name=" + name + ", addr=" + addr + ", deptNo=" + deptno
